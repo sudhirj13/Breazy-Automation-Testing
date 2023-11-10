@@ -1,42 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="100" name="Mobile" parallel="tests">
-
-    <test name="AndroidAppTest">
-        <parameter name="version" value="11" />
-        <parameter name="platform" value="Android" />
-        <parameter name="device" value="Galaxy Note20 Ultra 5G" />
+<suite thread-count="10" name="Desktop" parallel="tests">
+    <test thread-count="100" name="Chrome 10">
         <classes>
-            <class name="GameApp" />
+            <class name="BeazleyChrome10"/>
+        </classes>
+    </test><!-- Test -->
+    <test thread-count="100" name="Chrome 11">
+        <classes>
+            <class name="beazleyChrome11"/>
+        </classes>
+    </test><!-- Test -->
+    <test thread-count="100" name="Edge 10">
+        <classes>
+            <class name="beazleyEdge10"/>
+        </classes>
+    </test><!-- Test -->
+    <test thread-count="100" name="Edge 11">
+        <classes>
+            <class name="beazleyEdge11"/>
         </classes>
     </test><!-- Test -->
 
-    <test name="IOSAppTest">
-        <parameter name="version" value="16" />
-        <parameter name="platform" value="ios" />
-        <parameter name="device" value="iPhone 14" />
-        <classes>
-            <class name="GameApp" />
-        </classes>
-    </test><!-- Test -->
-
-    <test thread-count="20" parallel="classes" name="WindowTest">
-        <classes>
-            <class name="WindowsTest"/>
-        </classes>
-    </test><!-- Test -->
-    <test thread-count="20" parallel="classes" name="WindowTest1">
-        <parameter name="platform" value="Windows"/>
-        <parameter name="browser" value="Chrome"/>
-        <classes>
-            <class name="WindowsAndMacOS"/>
-        </classes>
-    </test> <!-- Test -->
-    <test thread-count="20" parallel="classes" name="MacTest">
-        <parameter name="platform" value="macOS Sonoma"/>
-        <parameter name="browser" value="safari"/>
-        <classes>
-            <class name="WindowsAndMacOS"/>
-        </classes>
-    </test> <!-- Test -->
 </suite>
