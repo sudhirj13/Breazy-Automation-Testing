@@ -20,9 +20,9 @@ public class beazleyChrome11 {
 
     @BeforeMethod
     public void setUp() throws MalformedURLException {
-        String userName = "ayusha";
+        String userName = "User_Name";
 
-        String accessKey = "9iXEJQQcqL7phECZqgmR8xWEFt9KppfumY51XV5KjB21Ef0JfE";
+        String accessKey = "User_AccessKey";
 
         String gridURL = "@hub.lambdatest.com/wd/hub";
 
