@@ -21,5 +21,15 @@
             <class name="beazleyEdge11"/>
         </classes>
     </test><!-- Test -->
+     <test thread-count="100" name="Safari 17">
+        <classes>
+            <class name="MacOSSonomaSafari"/>
+        </classes>
+    </test><!-- Test -->
+     <test thread-count="100" name="Safari 16">
+        <classes>
+            <class name="beazleyMacOSVenturaSafari"/>
+        </classes>
+    </test><!-- Test -->
 
 </suite>
