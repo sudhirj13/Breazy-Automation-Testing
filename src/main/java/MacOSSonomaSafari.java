@@ -137,6 +137,11 @@ public class beazleyMacSonomaSafari {
         ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element23);
         js.executeScript("window.scrollBy(0,700)", "");
 
+        Thread.sleep(3000);
+
+        js.executeScript("window.scrollBy(0,500)", "");
+        js.executeScript("window.scrollBy(0,500)", "");
+
         Thread.sleep(10000);
 
         driver.quit();
