@@ -12,7 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-public class beazleyMacVenturaSafari {
+public class MacOSVenturaSafari {
 
     private RemoteWebDriver driver;
 
